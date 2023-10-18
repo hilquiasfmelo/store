@@ -4,6 +4,7 @@
     "next/core-web-vitals"
   ],
   "rules": {
-    "no-var": "off"
+    "no-var": "off",
+    "@typescript-eslint/no-var-requires": "off"
   }
 }
