@@ -1,4 +1,4 @@
-import { ComponentProps, ReactNode } from 'react'
+import { ComponentProps } from 'react'
 
 type SectionTitleProps = ComponentProps<'p'>
 
