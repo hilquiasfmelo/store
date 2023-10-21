@@ -114,7 +114,7 @@ async function main() {
           'https://fsw-store.s3.sa-east-1.amazonaws.com/03_logi-mx-keys-mini.png',
           'https://fsw-store.s3.sa-east-1.amazonaws.com/04_logi-mx-keys-mini.png',
         ],
-        basePrice: 650,
+        basePrice: 750,
         categoryId: keyboardsCategory.id,
         discountPercentage: 10, // 10% discount
       },
