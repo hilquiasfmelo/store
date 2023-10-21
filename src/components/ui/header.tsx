@@ -16,6 +16,7 @@ import { Card } from './card'
 import { Button } from './button'
 import { Avatar, AvatarFallback, AvatarImage } from './avatar'
 import { Separator } from './separator'
+import Link from 'next/link'
 
 export function Header() {
   const { data, status } = useSession()
@@ -88,27 +89,33 @@ export function Header() {
               </Button>
             )}
 
-            <Button variant="outline" className="w-full justify-start gap-2">
-              <HomeIcon size={16} />
-              Início
-            </Button>
+            <Link href="/">
+              <Button variant="outline" className="w-full justify-start gap-2">
+                <HomeIcon size={16} />
+                Início
+              </Button>
+            </Link>
 
             <Button variant="outline" className="w-full justify-start gap-2">
               <PercentIcon size={16} />
               Ofertas
             </Button>
 
-            <Button variant="outline" className="w-full justify-start gap-2">
-              <ListOrderedIcon size={16} />
-              Catálogo
-            </Button>
+            <Link href="/catalog">
+              <Button variant="outline" className="w-full justify-start gap-2">
+                <ListOrderedIcon size={16} />
+                Catálogo
+              </Button>
+            </Link>
           </div>
         </SheetContent>
       </Sheet>
 
-      <h1 className="text-lg font-semibold">
-        Store <span className="text-primary">FSW</span>
-      </h1>
+      <Link href="/">
+        <h1 className="text-lg font-semibold">
+          Store <span className="text-primary">FSW</span>
+        </h1>
+      </Link>
 
       <Button size="icon" variant="outline">
         <ShoppingCartIcon />

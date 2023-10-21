@@ -18,7 +18,7 @@ export default async function CatalogPage() {
         Catálogo
       </Badge>
 
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-2">
         {categories.map((category) => (
           <CategoryItem key={category.id} category={category} />
         ))}
